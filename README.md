@@ -1,4 +1,3 @@
-# This is the assignment for week 4
-## Binary Tree
-
+# Binary Tree
+## This is the assignment for week 4
 
