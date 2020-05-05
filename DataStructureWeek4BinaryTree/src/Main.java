@@ -13,7 +13,14 @@ public class Main {
 		Tree tree = new Tree();
 
 		System.out.println("First prompt,Enter negative integer to quit eg -1");
-		//dot. (2020). try{}  and  catch{}. Retrieved May 5, 2020, from Ccsu.edu website: https://chortle.ccsu.edu/java5/Notes/chap80/ch80_5.html
+		/**
+		 * I have taken a refresher of try-catch in Java from here
+		 * dot. (2020). try{}  and  catch{}. Retrieved May 5, 2020, from Ccsu.edu website: 
+		 * https://chortle.ccsu.edu/java5/Notes/chap80/ch80_5.html
+		 *
+		 * 
+		 */
+	
 		int num;
 		try {
 			num = input.nextInt();
@@ -30,7 +37,12 @@ public class Main {
 		}catch(InputMismatchException ex) {
 			System.out.println("You entered bad data." );
 		      System.out.println("Run the program again." );
-		}finally {
+		}catch(Exception e){
+			System.out.println("There has been an unpredicted exemption\nthat has halted the execution of the program");
+			System.out.println("Run the program again." );
+			System.out.println("If you feels that there's an error, please let us know, Thx!!" );
+		}
+		finally {
 			input.close();
 		}
 		
